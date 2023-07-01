@@ -1,0 +1,22 @@
+<section>
+    <div *ngFor="let mtj of lstProduccion">
+        <div class="card">
+            <h5 class="card-title">{{mtj.desc}}</h5>
+
+            <div class="card-body">
+                    <div *ngFor="let pOp of mtj.elem">
+                        <h3>{{pOp.opcion}}</h3>
+                    </div>
+                    <a href="#sec5" class="btn btn-danger">¡Más información!</a>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="contenedorP">
+        <div class="cardtp">
+            <p>Ofrecemos atención, dinamismo, crecimiento de seguidores y ayuda a la venta. Fotalecemos su marca mostrando contenido de interés promoviendo sus productos o servicios. Creamos contenidos básicos de diseño, audio y video*.</p>
+        </div>
+        <p class="blanca">Si se requieren actores o equipo especial se cotiza aparte.</p>
+    </div>    
+</section>

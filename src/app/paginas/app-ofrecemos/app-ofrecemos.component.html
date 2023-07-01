@@ -1,0 +1,21 @@
+<section>
+    <div class="container">
+        <div class="row">
+            
+            <div class="col-lg-6 col-md-6 col-xs-12">
+                <video autoplay [muted]="'muted'" loop>
+                    <source src="{{rbase}}look.mp4" type="video/mp4"/>
+                    El explorador no permite visualizar este tipo de video.
+                </video>  
+            </div>
+
+            <div class="col-lg-6 col-md-6 col-xs-12">
+                <div *ngFor="let ele of ofrecemos">
+                    <div class="row"><h3 class="rayaIzq">{{ele.scope}}</h3></div>
+                    <p [innerHTML]="ele.desc"></p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>

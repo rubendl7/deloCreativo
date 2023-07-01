@@ -1,0 +1,127 @@
+.blanco {
+    color:whitesmoke;
+    background-color: #f31b22;
+}
+
+.loRelativo {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.absoluto {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 40px;
+    background-color: #3b3b3b;
+}
+
+.rojocentro {
+    background-image: linear-gradient(to right, #ed3237 0%, #f31b22 30%, #c51b21 60%, #ec2d34 100%);
+    padding-top: 1.5em;
+    color: white;
+    font-family: 'Gill Sans MT';
+    font-weight: bold; 
+    font-size: 42px;
+    text-align: center;
+    width: 100%;
+}
+
+section {
+    background-image: linear-gradient(to right, #ed3237 0%, #f31b22 30%, #c51b21 60%, #ec2d34 100%);
+    color:whitesmoke;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 0; 
+    padding-bottom: 3rem; 
+    flex-direction: row;
+    font-family: 'Gill Sans MT';
+}
+
+
+.ScssAudio {
+    background-image: url('https://www.delocreativo.com/delorec/img/Produccion1.png');
+    width: 100%;
+    height: 190px;   
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+} 
+
+
+.card {
+    display: flex;
+    flex-direction: column;
+    margin: 0.7rem;
+    max-width: 19rem;
+    min-height: 26rem;
+    min-width: 15rem;
+    color: rgb(255, 255, 255);
+    background-color: #ed3237;  
+    font-family: 'Gill Sans MT';  
+}
+
+.card-title {
+    margin-bottom: 1rem;
+}
+
+.card-title{
+    padding-left: 3rem;
+}
+
+img{ width: 100%;}
+
+audio {
+    opacity: 0.5; 
+}
+
+.rayaIzq {
+    color: #848688;
+    display:inline-block;
+    position:relative;
+}
+  
+.rayaIzq::before {
+    content: '';
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    background-color:rgb(6, 0, 83);
+    background: url(https://www.delocreativo.com/delorec/img/PuntoPlayNs.png); 
+    background-repeat: no-repeat;
+    background-size: 20px;
+    top: -6px;
+    left: -25px;
+}
+
+a { 
+    font-family: 'Gill Sans MT';
+    font-size: 18px;
+    text-decoration:none; 
+    color: white;
+    cursor:pointer; 
+    cursor: hand    
+} 
+
+nav {
+    margin: 0;
+    padding: 0;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: block;
+    list-style: none;
+    text-decoration: none;
+    line-height: 0.5;
+    color: rgb(255, 255, 255);
+}
+

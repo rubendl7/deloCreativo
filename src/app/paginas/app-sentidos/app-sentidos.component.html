@@ -1,0 +1,41 @@
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-xs-12 Cuadro1">
+                <h3 class="titSentido">Sentido Offline</h3>
+                <div *ngFor="let ele of sOffLine">
+                    <table>
+                        <tr>
+                            <th><span>{{ele.code}}</span></th>
+                            <th><p class="tbDes">{{ele.desc}}</p></th>
+                        </tr>
+                    </table>
+                    <nav>
+                        <ul>
+                            <div *ngFor="let eleO of ele.opciones">
+                                <li class="rayaIzq">{{eleO.opc}}</li>
+                            </div>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-xs-12 Cuadro2">
+                <h3 class="titSentido">Sentido Online</h3>
+                <div *ngFor="let ele of sOnLine">
+                    <h4 class="tbDes">{{ele.desc}}</h4>
+                    <nav>
+                        <ul>
+                            <div *ngFor="let eleO of ele.opciones">
+                                <li class="rayaIzq">{{eleO.opc}}</li>
+                            </div>
+                        </ul>
+                    </nav>    
+                </div>
+                <img class="avimg" src="{{rbase}}Micrófono.png"> 
+            </div>
+        </div>
+    </div>
+</section>
+
+

@@ -1,0 +1,85 @@
+section {
+    background-image: linear-gradient(to right, #ed3237 0%, #ed3237 30%, #ed3237 60%, #ed3237 100%);
+    background: url(https://www.delocreativo.com/delorec/img/Fondo4.png); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color:whitesmoke;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 3rem; 
+    padding-bottom: 2rem; 
+    flex-direction: row;
+    text-align: center; 
+}
+
+
+.card {
+    display: flex;
+    flex-direction: column;
+    margin: 0.7rem;
+    max-width: 17rem;
+    min-height: 36rem;
+    min-width: 14rem;
+    color: rgb(36, 36, 36);
+    background-color: #ffffff;  
+    text-align: center; 
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.card-title {
+    color: whitesmoke;
+    background-color: #000000;  
+    text-align: center; 
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    margin-bottom: 1em;
+    width: 102%;
+}
+
+
+h3 {
+    font-family: 'Gill Sans MT'; 
+    font-size: 16px;
+    font-weight: bold; 
+    margin-bottom: 1.3rem;
+}
+
+.btn {
+    text-align: center; 
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedorP{
+    font-family: Calibri;
+    font-size: 18px;
+    padding: 60px 0px 15px 0px;
+    max-width: 90%;
+    margin: auto;
+    overflow: hidden;
+    color: #ffffff;
+    position: relative;
+    text-align: center;
+}
+
+.cardtp{
+    background: rgb(0, 0, 0);
+    padding: 10px 30px;
+    text-align: center;
+    color:whitesmoke;
+}
+
+@media screen and (max-width:590px){
+    .card {
+        max-width: 23rem;
+        width: 23rem;
+    }
+    h3 {
+        font-size: 18px;
+    }    
+}

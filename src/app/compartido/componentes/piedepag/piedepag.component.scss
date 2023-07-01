@@ -1,0 +1,49 @@
+$font-primary: 'Poppins', Arial, sans-serif;
+
+
+section{
+    color: whitesmoke;
+}
+
+.img{
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.milogo { .img{ display: block; height: 150px; width: 150px; } }
+
+a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.footer-01{
+    background-image: linear-gradient(to bottom, #f8282f 0%, #da181f 30%, #af1319 60%, #9e0a0f 100%);
+	position: relative;
+	z-index: 0;
+	overflow: hidden;
+	&:after{
+		position: absolute;
+		top: -130px;
+		left: -50px;
+		width: 600px;
+		height: 600px;
+		content: '';
+		background-position: center center;
+		background-size: cover;
+		z-index: -1;
+		opacity: .05;
+	}
+    h5 { color: white ; font-weight: bold;	}
+	p{ color: whitesmoke;}
+    li { color: whitesmoke;}
+}
+
+
+@media (max-width: 40em) {
+	footer { 
+		justify-content: center;
+		align-items: center;
+	}
+}

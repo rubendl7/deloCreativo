@@ -1,0 +1,83 @@
+<section>
+    <div class="row rojocentro">
+        <h2>Producción de Contenido</h2>
+    </div>    
+    <div *ngFor="let mtj of lstProduccion">
+        
+        <div class="card">
+
+            <div *ngIf="mtj.idProd==='1'" class="ScssAudio" >
+                <audio controls autoplay src="{{elaudio}}" type="audio/mpeg"></audio>
+            </div>
+            <video id="videoPlayer" class="card-img-top" *ngIf="mtj.idProd==='2'" width="100%" preload="none" controls autoplay poster="{{rbase}}{{mtj.imagen}}" source src="{{elvideo}}" type="video/mp4" > </video>  
+
+            <img *ngIf="mtj.idProd==='3'" class="card-img-top" src="{{rbase}}{{mtj.imagen}}">
+            <img *ngIf="mtj.idProd==='4'" class="card-img-top" src="{{rbase}}{{mtj.imagen}}">
+
+            <div class="card-body">
+                <h5 class="card-title">{{mtj.titulo}}</h5>
+                <nav>
+                    <ul *ngFor="let pOp of mtj.videos">
+                        <li class="rayaIzq" >
+                            <a *ngIf="mtj.idProd==='1'" (click)="PodCast(pOp.video)">{{pOp.opcion}}</a>
+                            <a *ngIf="mtj.idProd==='2'" (click)="ElVideo(pOp.video)" >{{pOp.opcion}}</a>
+                            <a *ngIf="mtj.idProd==='3'" data-bs-toggle="modal" data-bs-target="#myModal">{{pOp.opcion}}</a>
+                            <a *ngIf="mtj.idProd==='4'" href="{{pOp.video}}">{{pOp.opcion}}</a>
+                        </li>
+                    </ul>
+                </nav> 
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+<div class="modal fade" id="myModal" tabindex="-1">
+    <div class="modal-dialog modal-fullscreen">
+      <div class="modal-content">
+  
+        <div class="modal-header">
+          <button type="button" class="btn-close blanco" data-bs-dismiss="modal"></button>
+        </div>
+  
+        <div class="modal-body">
+            <div class="loRelativo">
+                <div class="absoluto"></div>
+                <iframe id="miDocto" onLoad="disableClick()" oncontextmenu="return false;"
+                    src="https://www.delocreativo.com/delorec/doctos/Portafolio%20DISE%C3%91O%20DELO.pdf" 
+                    width="100%" 
+                    height="100%" 
+                    frameborder="1" 
+                    webkitallowfullscreen 
+                    mozallowfullscreen
+                    allowfullscreen>
+                </iframe>            
+            </div>
+        </div>
+  
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+        </div>
+  
+      </div>
+    </div>
+</div>
+
+
+
+<script> 
+    function disableClick(){ 
+      document.onclick=function(event){ 
+        if (event.button == 2) { 
+          alert('Right Click Message'); 
+          return false; 
+        } 
+      } 
+    } 
+    window.frames["miDocto"].document.oncontextmenu = function(){ return false; };
+
+    const noRightClick = document.getElementId("miDocto");
+    noRightClick.addEventListener("contextmenu", e => e.preventDefault());    
+</script> 
